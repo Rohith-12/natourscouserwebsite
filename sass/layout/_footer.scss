@@ -1,0 +1,155 @@
+.footer{
+    
+    
+    background-color: $color-grey-drak-3;
+    
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    
+    @include respond(tab-port){
+        
+    
+        
+        padding: 8rem 0;
+        
+        
+    }
+    
+    
+    &-logobox{
+        
+        
+        text-align: center;
+        margin-bottom: 10rem;
+        
+        
+         @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+        
+        
+    }
+    
+    &-navigation{
+        
+        
+        border-top: 1px solid $color-grey-drak-2;
+        
+        padding-top: 2rem; 
+        
+        
+         @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+        
+        
+    }
+    
+    
+    
+    &-logo{
+        
+        width: 15rem;
+        
+        height: auto;
+        
+    }
+    
+    
+    &-list{
+        
+       
+        list-style: none;
+        
+       
+        
+    }
+    
+    &-items{
+        
+        
+         
+        display: inline-block;
+        
+        
+         &:not(:last-child){
+            
+            margin-right: 1.1rem;
+             
+             
+             
+             
+            
+            
+        }
+        
+        
+      @include respond(phone) {
+
+          
+          padding-top: 0.5rem;
+         
+        
+        
+    }
+    }
+    
+    &-link{
+        
+        
+        &:link,
+        &:visited{
+            
+        display: inline-block;
+            
+        color:$color-light-grey-1;
+         
+        text-decoration: none;
+            
+        text-transform: uppercase;
+            
+            
+            
+           
+            
+  
+        
+        }
+        
+        &:hover,
+        &:active{
+            
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black,.5);
+            
+            transform: rotate(3deg) scale(1.08);
+            
+            
+            
+            
+        }
+        
+    }
+    
+      @include respond(tab-port) {
+
+          
+          &-copyright{
+              
+              float: none;
+              width: 100%;
+              text-align: center;
+              color: $color-light-grey-1;
+              
+              
+              
+              
+          }
+          
+    }
+    
+    
+    
+}
